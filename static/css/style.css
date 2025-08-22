@@ -1,0 +1,385 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb; /* Light background color for body */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #11151a; /* Dark background for the navbar */
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8f9fa !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #28a745 !important; /* Green color on hover */
+}
+
+.nav-item .nav-link {
+    font-size: 1.1rem;
+    color: #f8f9fa; /* Light text color for links */
+    padding: 10px 15px;
+    transition: color 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent; /* Initially no border */
+    border-radius: 5px;
+}
+
+/* Hover effect for links */
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+    color: #f8f9fa;
+    border: 2px solid #fff; /* White border on hover */
+    background-color: transparent;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #007bff; /* Blue background for the navbar toggle */
+}
+
+.navbar-toggler-icon {
+    color: #f8f9fa; /* White color for the icon */
+}
+
+/* Categories Dropdown */
+.nav-item.dropdown .nav-link {
+    padding-right: 30px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #343a40;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #f8f9fa;
+    padding: 12px 20px;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    width: 200px;
+    border-radius: 30px;
+    padding: 8px 20px;
+    border: none;
+    transition: width 0.3s ease;
+}
+
+.search-bar:focus {
+    width: 250px; /* Expands when focused */
+}
+
+.search-btn {
+    border-radius: 30px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    padding: 8px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #218838;
+}
+
+/* User Navigation Links */
+.user-link {
+    color: #f8f9fa;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.user-link:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Card Styles */
+.product-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+/* Product Title */
+.product-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/* Product Category */
+.product-category {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+/* Product Price */
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+/* Product Description */
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button and Input */
+.btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.quantity-input {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}
+
+/* Reviews Section */
+.reviews-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.review-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-text small {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.review-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.page-item .page-link {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+}
+
+.page-item .page-link:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* View Details Button */
+.view-btn {
+    background-color: #007bff;
+    border: none;
+}
+
+.view-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer Styles */
+footer {
+    background-color:#11151a;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f1c40f;
+}
+
+footer .fab {
+    margin-right: 10px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .pagination .page-link {
+        padding: 8px 12px;
+    }
+
+    .product-title {
+        font-size: 1.1rem;
+    }
+
+    .product-price {
+        font-size: 1rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .view-btn, .add-to-cart-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .product-category {
+        font-size: 1rem;
+    }
+
+    .reviews-title {
+        font-size: 1.3rem;
+    }
+
+    .product-description {
+        font-size: 0.95rem;
+    }
+}
+
+/* Remove default Bootstrap hover interference */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: none; /* Don't show with pure CSS */
+}
+
+/* Remove avatar arrow */
+.nav-item.dropdown > .nav-link::after {
+    display: none;
+}
+

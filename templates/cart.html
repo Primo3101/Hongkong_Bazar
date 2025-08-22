@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Shopping Cart</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in cart_items %}
+            <tr>
+                <!-- Product Image and Name -->
+                <td>
+                    <div class="d-flex align-items-center">
+                        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" style="width: 60px; height: 60px; object-fit: cover; margin-right: 10px;">
+                        {{ item.product.name }}
+                    </div>
+                </td>
+
+                <!-- Price -->
+                <td>${{ item.product.price }}</td>
+
+                <!-- Quantity -->
+                <td>
+                    <input type="number" class="form-control" value="{{ item.quantity }}" min="1" style="width: 70px;">
+                </td>
+
+                <!-- Total Price -->
+                <td>${{ item.total_price }}</td>
+
+                <!-- Actions: View Details, Buy, Remove -->
+                <td>
+                    <div class="d-flex gap-1">
+                        <!-- View Details -->
+                        <a href="{% url 'product-detail' pk=item.product.id %}" class="btn btn-info btn-sm">View    </a>
+
+                        <!-- Buy Product -->
+                        <form method="post" action="#">
+                            {% csrf_token %}
+                            <input type="hidden" name="product_id" value="{{ item.product.id }}">
+                            <button class="btn btn-warning btn-sm">Buy</button>
+                        </form>
+
+                        <!-- Remove Product -->
+                        <form method="post" action="{% url 'cart' %}">
+                            {% csrf_token %}
+                            <input type="hidden" name="product_id" value="{{ item.product.id }}">
+                            <input type="hidden" name="action" value="remove">
+                            <button class="btn btn-danger btn-sm">Remove</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="5">Your cart is empty</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</div>
+
+
+{% endblock content %}

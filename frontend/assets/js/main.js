@@ -1,0 +1,1 @@
+// Custom JavaScript for the e-commerce site
