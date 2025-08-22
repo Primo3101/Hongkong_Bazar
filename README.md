@@ -1,8 +1,6 @@
 # E-Shop Django Project
 
-**E-Shop** is a full-featured e-commerce web application built with **Django**.  
-It allows users to browse products, view product details, add items to the cart, leave reviews, and manage their profile.  
-The project also includes user authentication and admin functionality to manage products, categories, and tags.
+**E-Shop** is a full-featured e-commerce web application built with **Django**.It allows users to browse products, view product details, add items to the cart, leave reviews, and manage their profile.The project also includes user authentication and admin functionality to manage products, categories, and tags.
 
 ---
 
@@ -51,10 +49,14 @@ The project also includes user authentication and admin functionality to manage 
 ## **Screenshots**
 
 ### Login / Registration
-![Login Page](screenshots/login.png)
+![Login Page](screenshots/login.png) ![Registration Page](screenshots/registration.png)
+
+### Home Page
+![Home](screenshots/home.png)
 
 ### Product Detail
 ![Product Detail Page](screenshots/product_detail.png)
+![Comments Section](screenshots/comments.png)
 
 ### Cart
 ![Cart Page](screenshots/cart.png)
