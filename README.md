@@ -11,6 +11,8 @@ The project also includes user authentication and admin functionality to manage 
 - **User Authentication**
   - Register, login, and logout functionality.
   - Secure password handling using Django's authentication system.
+  - **Role-based access:** Only superusers can access the admin panel to manage products, categories, and tags.
+
 
 - **Product Catalog**
   - Browse products with images, price, and description.
