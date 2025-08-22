@@ -48,5 +48,15 @@ The project also includes user authentication and admin functionality to manage 
 
 ---
 
-## **Project Structure**
+## **Screenshots**
+
+### Login / Registration
+![Login Page](screenshots/login.png)
+
+### Product Detail
+![Product Detail Page](screenshots/product_detail.png)
+
+### Cart
+![Cart Page](screenshots/cart.png)
+
 
